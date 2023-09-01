@@ -1,18 +1,4 @@
- About Me:
 
- Hi, I'm Rabi-ur-Rehman! 👋
- 
-I'm a full stack developer...
-
-🔭 I’m currently working on Food hungama(Replica of food panda)
-
-🌱 I’m currently learning MERN Stack developer from bano Qabil
-
-👯 I’m looking to collaborate on frontend projects
-
-🤝 I’m looking for help with JS project
-
-💬 Ask me about HTML,CSS,JS
 
 📫 How to reach me rabiurrehman0318@gmail.com
 
