@@ -1,9 +1,25 @@
+ About Me
+
+ Hi, I'm Rabi-ur-Rehman! 👋
+ 
+I'm a full stack developer...
+
+🔭 I’m currently working on Food hungama(Replica of food panda)
+
+🌱 I’m currently learning MERN Stack developer from bano Qabil
+
+👯 I’m looking to collaborate on frontend projects
+
+🤝 I’m looking for help with JS project
+
+💬 Ask me about HTML,CSS,JS
+
+📫 How to reach me rabiurrehman0318@gmail.com
+
 
 # Rabi's Cafe - MERN Stack Website
 
 Welcome to Rabi's Cafe, a dynamic web platform specializing in selling bakery and sweet items. This project utilizes the MERN (MongoDB, Express.js, React.js, Node.js) stack to provide a feature-rich and scalable solution for your cafe.
-
-
 
 
 ## Demo
@@ -42,100 +58,162 @@ The application utilizes MongoDB as the database for storing information related
 
 ## Image Upload
 Product images are securely stored using Firebase Storage. This ensures efficient and secure handling of images associated with your bakery and sweet items.
+
+
 ## API Reference
 
-### Items
-#### Get all items
+#### User API's
 
 ```http
-  GET /api/items
+  localhost:1234/api/signup
 ```
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
 | `api_key` | `string` | **Required**. Your API key |
 
-#### Get item
+#### login API
 
 ```http
-  GET /api/items/${id}
+ localhost:1234/api/login
 ```
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
-| `id`      | `string` | **Required**. Id of item to fetch |
+| `id`      | `string` | **Required**.  |
 
-
-
-
-### Items
 #### Get all users
 
 ```http
-  GET /api/getallusers
+ localhost:1234/api/getallusers
 ```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `string` | **Required**.|
 
 #### Get User By Email
 
 ```http
-  GET /api/userbyemail/:email
+ localhost:1234/api/userbyemail/
 ```
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
-| `email`      | `string` | **Required**. user email |
+| `id`      | `string` | **Required**. Email of item to fetch |
 
-
-
-### Items
-#### Get all items
+#### update User
 
 ```http
-  GET /api/items
-```
-
-| Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `api_key` | `string` | **Required**. Your API key |
-
-#### Get item
-
-```http
-  GET /api/items/${id}
+ localhost:1234/api/update-user
 ```
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
 | `id`      | `string` | **Required**. Id of item to fetch |
 
-API's:
-Users
-http://localhost:1234/api/signup
-http://localhost:1234/api/login
-http://localhost:1234/api/getallusers
-http://localhost:1234/api/update-user
-http://localhost:1234/api/delete-user
+#### User Delete
 
-Products:
-http://localhost:1234/api/get-all-products
-http://localhost:1234/api/get-product-by-id/:_id
-http://localhost:1234/api/get-product-by-category/:category
-http://localhost:1234/api/get-product-by-brand/:brand
+```http
+ localhost:1234/api/delete-user
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `string` | **Required**. Id of item to fetch |
+
+
+#### Product API's
+
+#### Post Product
+
+```http
 http://localhost:1234/api/add-products
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `string` | **Required**.|
+
+
+#### Get all product
+
+```http
+http://localhost:1234/api/get-all-products
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `string` | **Required**.|
+
+#### Get Product by Brand
+
+```http
+http://localhost:1234/api/get-product-by-brand/:brand
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `string` | **Required**.|
+
+#### Get product by Category
+
+```http
+http://localhost:1234/api/get-product-by-category/:category
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `string` | **Required**.|
+
+
+#### Get Product by ID
+
+```http
+http://localhost:1234/api/get-product-by-id/:_id
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `string` | **Required**.|
+
+
+#### DELETE PRODUCT
+
+```http
 http://localhost:1234/api/delete-products
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `string` | **Required**.|
+
+#### Update Product
+
+```http
 http://localhost:1234/api/update-products
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `string` | **Required**.|
+
+Rest of They ApI's Are
 
 Category:
-http://localhost:1234/api/add-category
-http://localhost:1234/api/get-all-categories
-http://localhost:1234/api/categorybyname/:name
-http://localhost:1234/api/delete-category
-http://localhost:1234/api/update-category
+CREATE:http://localhost:1234/api/add-category
+GET ALL CAT:http://localhost:1234/api/get-all-categories
+BY NAME:http://localhost:1234/api/categorybyname/:name
+DELETE CAT:http://localhost:1234/api/delete-category
+UPDATE CAT:http://localhost:1234/api/update-category
 
 Brands:
-http://localhost:1234/api/add-brand
-http://localhost:1234/api/brandbyid/:_id
-http://localhost:1234/api/brandbyname/:BrandName
-http://localhost:1234/api/get-all-brands
-http://localhost:1234/api/update-brand
-http://localhost:1234/api/delete-brand
+CREATE:http://localhost:1234/api/add-brand
+BRAND BY ID: http://localhost:1234/api/brandbyid/:_id
+ BRAND BY NAME:http://localhost:1234/api/brandbyname/:BrandName
+GET ALL BRANDS:http://localhost:1234/api/get-all-brands
+UPDATE BRANDS:http://localhost:1234/api/update-brand
+DELETE :http://localhost:1234/api/delete-brand
+
+
+## 🔗 Links
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://www.linkedin.com/in/rabi-ur-rehman-840862182//)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rabi-ur-rehman-840862182/)
+
+
+
