@@ -60,6 +60,7 @@ The application utilizes MongoDB as the database for storing information related
 Product images are securely stored using Firebase Storage. This ensures efficient and secure handling of images associated with your bakery and sweet items.
 
 
+
 ## API Reference
 
 #### User API's
@@ -160,10 +161,12 @@ http://localhost:1234/api/get-product-by-brand/:brand
 
 ```http
 http://localhost:1234/api/get-product-by-category/:category
+```
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
 | `id`      | `string` | **Required**.|
+
 
 
 #### Get Product by ID
@@ -181,14 +184,19 @@ http://localhost:1234/api/get-product-by-id/:_id
 
 ```http
 http://localhost:1234/api/delete-products
+```
+
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
 | `id`      | `string` | **Required**.|
+
 
 #### Update Product
 
 ```http
 http://localhost:1234/api/update-products
+```
+
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
 | `id`      | `string` | **Required**.|
@@ -197,23 +205,28 @@ Rest of They ApI's Are
 
 Category:
 CREATE:http://localhost:1234/api/add-category
+
 GET ALL CAT:http://localhost:1234/api/get-all-categories
+
 BY NAME:http://localhost:1234/api/categorybyname/:name
+
 DELETE CAT:http://localhost:1234/api/delete-category
+
 UPDATE CAT:http://localhost:1234/api/update-category
 
 Brands:
 CREATE:http://localhost:1234/api/add-brand
+
 BRAND BY ID: http://localhost:1234/api/brandbyid/:_id
+
  BRAND BY NAME:http://localhost:1234/api/brandbyname/:BrandName
+ 
 GET ALL BRANDS:http://localhost:1234/api/get-all-brands
+
 UPDATE BRANDS:http://localhost:1234/api/update-brand
+
 DELETE :http://localhost:1234/api/delete-brand
 
-
-## 🔗 Links
-[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://www.linkedin.com/in/rabi-ur-rehman-840862182//)
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rabi-ur-rehman-840862182/)
 
 
 
